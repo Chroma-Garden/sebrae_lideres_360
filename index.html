@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/enter.css">
+    <title>Entrar | Sebrae Lideres em Movimento 360</title>
+  </head>
+  <body>
+
+    <div class="box1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" id="loginho">
+                    <img src="/img/logo2.png" alt="">
+                </div>
+                <div class="col-lg-6" id="logo">
+                    <img src="/img/logo.png" alt="">
+                </div>
+                <div class="col-lg-6" id="selecione">
+                <button type="button" id="cadastrar">Faça sua inscrição</button>
+                <button type="button" id="cadastrado">Já sou inscrito</button>
+                </div>
+                <div class="col-lg-6" id="formCadastrar">
+                    <p>Faça sua Inscrição</p>
+                    <input type="text" name="nomeSebraeLideres" id="nomeSebraeLideres" placeholder="Nome*">
+                    <input type="text" name="cpfSebraeLideres" id="cpfSebraeLideres" placeholder="CPF*">
+                    <input type="text" name="cidadeSebraeLideres" id="cidadeSebraeLideres" placeholder="Cidade*">
+                    <select id="estadoSebraeLideres" name="estadoSebraeLideres">
+                        <option value="estado" selected disabled>Estado*</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                      </select>
+                      <select id="sexoSebraeLideres" name="sexoSebraeLideres">
+                        <option value="selecione" disabled selected>Sexo*</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                      </select>
+                      <input type="email" name="emailSebraeLideres" id="emailSebraeLideres" placeholder="E-mail*">
+                      <input type="text" name="datanascimentoSebraeLideres" id="datanascimentoSebraeLideres" placeholder="Data de Nascimento*">
+                      <input type="tel" name="celularSebraeLideres" id="celularSebraeLideres" placeholder="Celular*">
+                      <input type="text" name="cnpjSebraeLideres" id="cnpjSebraeLideres" placeholder="CNPJ">
+                      <input type="text" name="empresaSebraeLideres" id="empresaSebraeLideres" placeholder="Empresa">
+                      <input type="text" name="cargoSebraeLideres" id="cargoSebraeLideres" placeholder="Cargo">
+                      <input type="text" name="codigovipSebraeLideres" id="codigovipSebraeLideres" placeholder="Codigo VIP">
+                      <button type="button">Entrar</button>
+                </div>
+                <div class="col-lg-6" id="formCadastrado">
+                    <p>Já sou inscrito</p>
+                    <input type="text" name="cpfcadastradoSebraeLideres" id="cpfcadastradoSebraeLideres" placeholder="CPF*">
+                    <button type="button">Entrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+         
+         $('#cadastrar').on('click', function() {
+            $('#selecione').hide(300);
+            $('#formCadastrar').show(300);
+        });
+
+        $('#cadastrado').on('click', function() {
+            $('#selecione').hide(300);
+            $('#formCadastrado').show(300);
+        });
+
+ 
+
+
+    </script>
+  </body>
+</html>
