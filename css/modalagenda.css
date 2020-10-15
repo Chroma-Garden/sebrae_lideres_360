@@ -1,0 +1,187 @@
+.background{
+    background: url(/img/bg3.png) top no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+#modalAgenda .modal-dialog {
+    max-width: 1280px;
+}
+
+
+#modalAgenda .modal-content{
+    background: rgb(86,37,124);
+    background: linear-gradient(0deg, rgba(86,37,124,1) 0%, rgba(189,0,78,1) 100%);
+    border: none;
+}
+
+#modalAgenda .modal-header{
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#modalAgenda .modal-header img{
+    cursor: pointer;
+}
+
+#modalAgenda .modal-body{
+    padding:0;
+}
+#modalAgenda .modal-body #foto{
+    padding: 0;
+}
+
+#modalAgenda .modal-body #foto img{
+    width: 100%;
+}
+
+
+#modalFotoVisualiza .modal-dialog {
+    max-width: 1380px;
+}
+
+
+
+
+#modalFotoVisualiza .modal-content{
+    background: rgb(86,37,124);
+    background: linear-gradient(0deg, rgba(86,37,124,1) 0%, rgba(189,0,78,1) 100%);
+    border: none;
+}
+
+#modalFotoVisualiza .modal-header{
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#modalFotoVisualiza .modal-header img{
+    cursor: pointer;
+}
+
+#modalFotoVisualiza .modal-body{
+    padding:0;
+}
+#modalFotoVisualiza .modal-body #foto{
+    padding: 0;
+}
+
+#modalFotoVisualiza .modal-body #foto img{
+    width: 100%;
+}
+
+#diaSelecione{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#diaSelecione button{
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100px;
+    height: 40px;
+    color: yellow;
+    margin-right: 25px
+}
+
+
+#btnAgenda{
+    display: flex;
+    justify-content: space-around;
+}
+
+#btnAgenda button:nth-child(1){
+    background: url(/img/exit.png) no-repeat #fff;
+    height: 80px;
+    width: 40%;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    background-size: 40px;
+    background-position: 0px;
+}
+
+#btnAgenda button:nth-child(2){
+    background: url(/img/exit.png) no-repeat #213480;
+    height: 80px;
+    width: 40%;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    background-size: 40px;
+    background-position: 0px;
+    color: #fff;
+    padding-left: 25px;
+}
+
+#infoAgenda p:nth-child(1){
+    font-size: 25px;
+    text-transform: uppercase;
+    color: yellow;
+}
+
+#infoAgenda p{
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#infoPalestrante{
+    background-color: #213480;
+    margin-top: 30px;
+    padding: 40px;
+    margin-bottom: 25px;
+    margin-bottom: 45px;
+    border-radius: 5px;
+}
+
+#fotoPalestrante img{
+    width: 100%;
+}
+
+
+#textoPalestrante div{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#textoPalestrante p:nth-child(2){
+    color: yellow;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#textoPalestrante p:nth-child(3){
+    color: #fff;
+}
+
+#modalAgenda .container:nth-child(2){
+    height: 450px;
+    overflow-y: auto;
+}
+
+
+
+@media screen and (min-width: 300px) and (max-width: 725px){
+    #btnAgenda {
+        justify-content: space-between;
+        padding-top: 25px;
+    }
+    #infoAgenda p:nth-child(1) {
+        font-size: 21px;
+        margin-top: 25px;
+    }
+    #btnAgenda button:nth-child(1) {
+        width: 49%;
+    }
+    #btnAgenda button:nth-child(2) {
+        width: 45%;
+    }
+    #fotoPalestrante img {
+        width: 150px;
+    }
+}
