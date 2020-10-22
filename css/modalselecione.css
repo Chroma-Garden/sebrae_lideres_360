@@ -1,0 +1,69 @@
+.background{
+    background: url(/img/bg3.png) top no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+#modalSelecione .modal-dialog {
+    max-width: 780px;
+}
+
+
+#modalSelecione .modal-content{
+    background: rgb(86,37,124);
+    background: linear-gradient(0deg, rgba(86,37,124,1) 0%, rgba(189,0,78,1) 100%);
+    border: none;
+}
+
+#modalSelecione .modal-header{
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#modalSelecione .modal-header img{
+    cursor: pointer;
+}
+#modalSelecione .modal-body #info h6{
+    color: #DAD716;
+    font-size: 31px;
+}
+
+#modalSelecione .modal-body #info p:nth-child(2){
+    color: #fff;
+    padding-top: 10px;
+}
+
+#modalSelecione .modal-body #info p:nth-child(3){
+    color: #fff;
+}
+
+
+
+#modalSelecione .modal-body #download{
+    
+background: #213480;
+height: 370px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 50px;
+justify-content: center;
+}
+
+
+#modalSelecione .modal-body #download img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+#modalSelecione .modal-body #download p:nth-child(2) {
+    color: #DAD716;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+
+#modalSelecione .modal-body #download p:nth-child(3) {
+    color: #fff;
+}

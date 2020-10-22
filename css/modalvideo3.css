@@ -1,0 +1,70 @@
+.background{
+    background: url(/img/bg3.png) top no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+#modalVideo3 .modal-dialog {
+    max-width: 980px;
+}
+
+
+#modalVideo3 .modal-content{
+    background: rgb(86,37,124);
+    background: linear-gradient(0deg, rgba(86,37,124,1) 0%, rgba(189,0,78,1) 100%);
+    border: none;
+}
+
+#modalVideo3 .modal-header{
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#modalVideo3 .modal-header img{
+    cursor: pointer;
+}
+#modalVideo3 .modal-body #info h6{
+    color: #DAD716;
+    font-size: 31px;
+}
+
+#modalVideo3 .modal-body #info p:nth-child(2){
+    color: #fff;
+    padding-top: 10px;
+}
+
+#modalVideo3 .modal-body #info p:nth-child(3){
+    color: #fff;
+}
+
+#modalVideo3 .modal-body #video iframe{
+    height: 320px;
+}
+
+#modalVideo3 .modal-body #video input{
+    width: 80%;
+height: 43px;
+margin-top: 20px;
+border: none;
+border-radius: 5px;
+padding-left: 20px;
+}
+
+
+#modalVideo3 .modal-body #video button{
+    width: 110px;
+height: 44px;
+border: none;
+border-radius: 5px;
+font-weight: bold;
+background: #d835d3;
+color: #fff;
+}
+
+
+#modalVideo3 .modal-body #video p{
+    color: #39ff39;
+    margin-top: 10px;
+}
+
