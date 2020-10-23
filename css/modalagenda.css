@@ -94,6 +94,10 @@
     justify-content: space-around;
 }
 
+#itemAgenda{
+    margin-top: 45px;
+}
+
 #btnAgenda button:nth-child(1){
     background: url(/img/exit.png) no-repeat #fff;
     height: 80px;
@@ -119,7 +123,7 @@
 }
 
 #infoAgenda p:nth-child(1){
-    font-size: 25px;
+    font-size: 20px;
     text-transform: uppercase;
     color: yellow;
 }
@@ -127,6 +131,7 @@
 #infoAgenda p{
     color: #fff;
     margin-bottom: 10px;
+    font-size: 15px;
 }
 
 #infoPalestrante{
