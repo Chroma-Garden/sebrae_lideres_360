@@ -25,7 +25,12 @@
                 <button type="button" id="cadastrado">Já sou inscrito</button>
                 </div>
                 <div class="col-lg-6" id="formCadastrar">
+                  <div id="alinha10"> 
                     <p>Faça sua Inscrição</p>
+                    <a href="#" id="1"><img src="/img/back1.png" alt=""></a>
+
+                  </div>
+                   
                     <input type="text" name="nomeSebraeLideres" id="nomeSebraeLideres" placeholder="Nome*">
                     <input type="text" name="cpfSebraeLideres" id="cpfSebraeLideres" placeholder="CPF*">
                     <input type="text" name="cidadeSebraeLideres" id="cidadeSebraeLideres" placeholder="Cidade*">
@@ -74,7 +79,12 @@
                       <button type="button">Entrar</button>
                 </div>
                 <div class="col-lg-6" id="formCadastrado">
+                  <div id="alinha10">
                     <p>Já sou inscrito</p>
+                    <a href="#" id="2"><img src="/img/back1.png" alt=""></a>
+
+                  </div>
+                 
                     <input type="text" name="cpfcadastradoSebraeLideres" id="cpfcadastradoSebraeLideres" placeholder="CPF*">
                     <button type="button">Entrar</button>
                 </div>
@@ -97,6 +107,17 @@
         $('#cadastrado').on('click', function() {
             $('#selecione').hide(300);
             $('#formCadastrado').show(300);
+        });
+
+
+        $('#1').on('click', function() {
+            $('#selecione').show(300);
+            $('#formCadastrar').hide(300);
+        });
+
+        $('#2').on('click', function() {
+            $('#selecione').show(300);
+            $('#formCadastrado').hide(300);
         });
 
  
