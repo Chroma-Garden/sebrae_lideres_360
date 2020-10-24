@@ -128,7 +128,14 @@
 
 #itemAgenda{
     margin-top: 45px;
+    border-bottom: 1px solid #fff;
 }
+
+
+#itemAgenda27, #itemAgenda28, #itemAgenda29{
+    display: none;
+}
+
 
 #btnAgenda button:nth-child(1) {
     background: url(/img/exit.png) no-repeat #fff;
@@ -163,7 +170,7 @@
 
 #infoAgenda p{
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-size: 15px;
 }
 
@@ -200,6 +207,7 @@
 #modalAgenda .container:nth-child(2){
     height: 450px;
     overflow-y: auto;
+    margin-bottom: 50px;
 }
 
 
@@ -229,3 +237,12 @@
     margin-bottom: 55px;
     color: #fff;
 }
+
+#infoPalestrante #fotoPalestrante img{
+    border-radius: 90px;
+}
+
+#infoPalestrante{
+    display: none;
+}
+
