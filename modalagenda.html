@@ -978,7 +978,14 @@
          
          
          
-         
+         $("button").on("click", function (e) {
+  // 1
+  e.preventDefault();
+  // 2
+  const href = $(this).attr("href");
+  // 3
+  $("#infoPalestrante").animate({ scrollTop: $(href).offset().top }, 800);
+});
          
          
          

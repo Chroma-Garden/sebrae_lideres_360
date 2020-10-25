@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -146,7 +150,7 @@
     font-weight: bold;
     padding-left: 31px;
     background-size: 40px;
-    background-position: 0px;
+    background-position: 8px;
 }
 
 #btnAgenda button:nth-child(2){
@@ -157,7 +161,7 @@
     border-radius: 5px;
     font-weight: bold;
     background-size: 40px;
-    background-position: 0px;
+    background-position: 5px;
     color: #fff;
     padding-left: 25px;
 }
@@ -229,6 +233,30 @@
     }
     #fotoPalestrante img {
         width: 150px;
+    }
+    #btnAgenda button:nth-child(1) {
+        background: url(/img/exit.png) no-repeat #fff;
+        height: 80px;
+        width: 53%;
+        border: none;
+        font-size: 15px;
+        border-radius: 5px;
+        font-weight: bold;
+        padding-left: 42px;
+        background-size: 40px;
+        background-position: 8px;
+    }
+    #btnAgenda button:nth-child(2) {
+        background: url(/img/exit.png) no-repeat #213480;
+        height: 80px;
+        width: 40%;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        background-size: 40px;
+        background-position: 5px;
+        color: #fff;
+        padding-left: 40px;
     }
 }
 
