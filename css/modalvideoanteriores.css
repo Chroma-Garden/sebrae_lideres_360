@@ -1,0 +1,179 @@
+.background{
+    background: url(/img/bg3.png) top no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+#modalVideoAnteriores .modal-dialog {
+    max-width: 740px;
+}
+
+
+#modalVideoAnteriores .modal-content{
+    background: rgb(86,37,124);
+    background: linear-gradient(0deg, rgba(86,37,124,1) 0%, rgba(189,0,78,1) 100%);
+    border: none;
+}
+
+#modalVideoAnteriores .modal-header{
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#modalVideoAnteriores .modal-header img{
+    cursor: pointer;
+}
+#modalVideoAnteriores .modal-body #info h6{
+    color: #DAD716;
+    font-size: 31px;
+}
+
+#modalVideoAnteriores .modal-body #info p:nth-child(2){
+    color: #fff;
+    padding-top: 10px;
+}
+
+#modalVideoAnteriores .modal-body #info p:nth-child(3){
+    color: #fff;
+}
+
+#modalVideoAnteriores .modal-body #download{
+    background: #213480;
+height: 370px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 50px;
+justify-content: center;
+}
+
+
+#modalVideoAnteriores .modal-body #download img{
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+#modalVideoAnteriores .modal-body #download p:nth-child(2){
+    color: #DAD716;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+#modalVideoAnteriores .modal-body #download p:nth-child(3){
+    color: #fff;
+}
+
+
+#diaSelecione button{
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100px;
+    height: 40px;
+    color: #ffe600;
+    margin-right: 25px
+}
+
+#diaSelecione button:focus {
+    background: #213480;
+    border: 1px solid #ffe600;
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    margin-right: 25px;
+}
+
+
+#modalVideoAnteriores #titulo h4{
+    text-align: center;
+    margin-bottom: 55px;
+    color: #fff;
+}
+
+
+#diaSelecione{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
+#modalVideoAnteriores #borda {
+    border: 1px solid #fff;
+    padding-top: 25px;
+    border-radius: 15px;
+    overflow-y: auto;
+    height: 360px;
+}
+#modalVideoAnteriores #itemVideo{
+    border-bottom: 1px solid #fff;
+    padding: 15px;
+}
+
+#modalVideoAnteriores #lateral{
+    border-right: 1px solid #d4d448;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#modalVideoAnteriores #infoLateral h6{
+    color: #ffe600;
+font-size: 23px;
+text-transform: uppercase;
+}
+
+#modalVideoAnteriores #infoLateral p:nth-child(2){
+    color: #fff;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+#modalVideoAnteriores #infoLateral p:nth-child(3){
+    color: #fff;
+}
+
+ #itemVideo28, #itemVideo29{
+    display: none;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 725px){
+    #modalVideoAnteriores #lateral {
+        border-right: none;
+        display: flex;
+        justify-content: end;
+
+        margin-bottom: 15px;
+    }
+    #diaSelecione button {
+        margin-right: 0;
+    }
+    
+}
+
+#itemVideo a:hover{
+    text-decoration: none;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #213480; 
+    border-radius: 10px;
+  }
+  
+
+
+
