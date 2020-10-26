@@ -3,66 +3,63 @@
     width: 100%;
     height: 100vh;
 }
-
 #modalPesquisa .modal-content{
     background: rgb(0,153,218);
     background: linear-gradient(260deg, rgba(0,153,218,1) 0%, rgba(33,52,128,1) 100%);
     border: none;
+    border-radius: 10px;
 }
-
 #modalPesquisa .modal-header{
     border: none;
     display: flex;
     justify-content: flex-end;
 }
-
 #modalPesquisa .modal-header img{
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
 #modalPesquisa .modal-header{
     border: none;
 }
-
 #modalPesquisa .modal-content{
     background-color: #1b345db0;
     text-align: left;
 }
-
 #modalPesquisa .modal-dialog{
         max-width: 680px;
 }
-
 #modalPesquisa .modal-content .modal-body p{
     color: #DAD716;
-    font-size: 20px;
-    margin-top: 10px;
+    font-size: 18px;
+    margin-top: -10px;
 }
-
 #modalPesquisa .modal-content .modal-body label{
     color: #fff;
     margin-left: 15px;
-    margin-right: 15px;
+    margin-right: 3px;
    
 }
+#modalPesquisa .modal-content .modal-body .nota_conteudo_radio{
+    display: flex;
+    flex-direction: row;
+}
 
+#modalPesquisa .modal-content .modal-body .nota_conteudo_radio input{
+    margin-top: 7px;
+    margin-left: 2px;
+}
 
+#modalPesquisa .modal-content .modal-body .comentario {
+    display: none;
+    margin-top: 30px;
+}
 #modalPesquisa .modal-content .modal-body .comentario #comentario_enviar{
     width: 80%;
     border: none;
     padding-left: 15px;
     height: 43px;
 }
-
-
-#modalPesquisa .modal-content .modal-body .comentario #enviar{
+#modalPesquisa .modal-content .modal-body .comentario #enviarPesquisa{
     width: 115px;
     height: 43px;
     background-color: #69A5D6;
@@ -72,10 +69,14 @@
     border: none;
     transition-property: transform;
 }
-
-
-#modalPesquisa .modal-content .modal-body .comentario #enviar:hover{
+#modalPesquisa .modal-content .modal-body .comentario #enviarPesquisa:hover{
     transform: scale(1.1);
 }
 
-
+@media screen and (max-width: 500px){
+    #modalPesquisa .modal-content .modal-body .nota_conteudo_radio{
+        flex-direction: column;
+    
+    }
+    
+}

@@ -40,59 +40,38 @@
         <div class="modal-body">
             <div class="nota_conteudo">
                 <p>De 1 a 10, quanto você recomendaria esse conteúdo?</p>
-                <label for="conteudo">1</label>
-                <input type="radio" name="conteudo" id="1_conteudo">
-                <label for="conteudo">2</label>
-                <input type="radio" name="conteudo" id="2_conteudo">
-                <label for="conteudo">3</label>
-                <input type="radio" name="conteudo" id="3_conteudo">
-                <label for="conteudo">4</label>
-                <input type="radio" name="conteudo" id="4_conteudo">
-                <label for="conteudo">5</label>
-                <input type="radio" name="conteudo" id="5_conteudo">
-                <label for="conteudo">6</label>
-                <input type="radio" name="conteudo" id="6_conteudo">
-                <label for="conteudo">7</label>
-                <input type="radio" name="conteudo" id="7_conteudo">
-                <label for="conteudo">8</label>
-                <input type="radio" name="conteudo" id="8_conteudo">
-                <label for="conteudo">9</label>
-                <input type="radio" name="conteudo" id="9_conteudo">
-                <label for="conteudo">10</label>
-                <input type="radio" name="conteudo" id="10_conteudo">
-
-            </div>
-            <div class="nota_eveto">
-              <p>De 1 a 10, quanto você está satisfeito com esse formato de evento?</p>
-              <label for="evento">1</label>
-              <input type="radio" name="evento" id="1_evento">
-              <label for="evento">2</label>
-              <input type="radio" name="evento" id="2_evento">
-              <label for="evento">3</label>
-              <input type="radio" name="evento" id="3_evento">
-              <label for="evento">4</label>
-              <input type="radio" name="evento" id="4_evento">
-              <label for="evento">5</label>
-              <input type="radio" name="evento" id="5_evento">
-              <label for="evento">6</label>
-              <input type="radio" name="evento" id="6_evento">
-              <label for="evento">7</label>
-              <input type="radio" name="evento" id="7_evento">
-              <label for="evento">8</label>
-              <input type="radio" name="evento" id="8_evento">
-              <label for="evento">9</label>
-              <input type="radio" name="evento" id="9_evento">
-              <label for="evento">10</label>
-              <input type="radio" name="evento" id="10_evento">
-
-
-
-            </div>
-            <div class="comentario">
-              <p>Gostaria de deixar algum comentário ou segestão?</p>
+                <div class="nota_conteudo_radio">
+                <div style="display: flex; flex-direction: row;" >
+                  <label for="conteudo">1</label>
+                  <input type="radio" name="conteudo" id="1_conteudo">
+                  <label for="conteudo">2</label>
+                  <input type="radio" name="conteudo" id="2_conteudo">
+                  <label for="conteudo">3</label>
+                  <input type="radio" name="conteudo" id="3_conteudo">
+                  <label for="conteudo">4</label>
+                  <input type="radio" name="conteudo" id="4_conteudo">
+                  <label for="conteudo">5</label>
+                  <input type="radio" name="conteudo" id="5_conteudo">
+                </div>
+                <div style="display: flex; flex-direction: row;" >                  
+                  <label for="conteudo">6</label>
+                  <input type="radio" name="conteudo" id="6_conteudo">
+                  <label for="conteudo">7</label>
+                  <input type="radio" name="conteudo" id="7_conteudo">
+                  <label for="conteudo">8</label>
+                  <input type="radio" name="conteudo" id="8_conteudo">
+                  <label for="conteudo">9</label>
+                  <input type="radio" name="conteudo" id="9_conteudo">
+                  <label for="conteudo">10</label>
+                  <input type="radio" name="conteudo" id="10_conteudo">
+                </div>
+              </div>
+            </div>            
+            <div class="comentario" id="campocomentario">
+              <p id="txtSecondQuestion">Gostaria de deixar algum comentário ou segestão?</p>
               <div class="alinha">
               <input type="text" name="comentario_enviar" id="comentario_enviar" placeholder="Escrever comentário">
-              <button type="button" id="enviar">Enviar</button>
+              <button type="button" id="enviarPesquisa">Enviar</button>
               </div>
             </div>
         </div>
@@ -104,9 +83,6 @@
 
 
 
-  
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -116,6 +92,117 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   
+    <script>
+      document.getElementById("1_conteudo").addEventListener("change", function(event) {        
+                $("#txtSecondQuestion").html("Teste1");
+        $("#campocomentario").css("display", "block");
+      });
+      document.getElementById("2_conteudo").addEventListener("change", function(event) {    
+        $("#txtSecondQuestion").html("Teste1");
+        $("#campocomentario").css("display", "block");
+      });
+      document.getElementById("3_conteudo").addEventListener("change", function(event) {    
+        $("#txtSecondQuestion").html("Teste1");
+        $("#campocomentario").css("display", "block");
+      });
+      document.getElementById("4_conteudo").addEventListener("change", function(event) {  
+        $("#txtSecondQuestion").html("Teste1");
+        $("#campocomentario").css("display", "block");
+      });
+      document.getElementById("5_conteudo").addEventListener("change", function(event) {   
+        $("#txtSecondQuestion").html("Teste1");
+        $("#campocomentario").css("display", "block");
+      });
+      document.getElementById("6_conteudo").addEventListener("change", function(event) {   
+        $("#txtSecondQuestion").html("Teste1");
+        $("#campocomentario").css("display", "block");
+      });
+      document.getElementById("7_conteudo").addEventListener("change", function(event) {    
+        $("#txtSecondQuestion").html("Teste2");
+        $("#campocomentario").css("display", "block");
+      });
+      document.getElementById("8_conteudo").addEventListener("change", function(event) {    
+        $("#txtSecondQuestion").html("Teste2");
+        $("#campocomentario").css("display", "block");
+      });
+      document.getElementById("9_conteudo").addEventListener("change", function(event) {   
+        $("#txtSecondQuestion").html("Teste3");
+        $("#campocomentario").css("display", "block");
+      });
+      document.getElementById("10_conteudo").addEventListener("change", function(event) {    
+        $("#txtSecondQuestion").html("Teste4");
+        $("#campocomentario").css("display", "block");
+      });
+
+
+
+      document.getElementById("enviarPesquisa").addEventListener("click", function(event) {    
+          
+        let conteudo1Value = document.getElementById("1_conteudo").checked;
+        let conteudo2Value = document.getElementById("2_conteudo").checked;
+        let conteudo3Value = document.getElementById("3_conteudo").checked;
+        let conteudo4Value = document.getElementById("4_conteudo").checked;
+        let conteudo5Value = document.getElementById("5_conteudo").checked;
+        let conteudo6Value = document.getElementById("6_conteudo").checked;
+        let conteudo7Value = document.getElementById("7_conteudo").checked;
+        let conteudo8Value = document.getElementById("8_conteudo").checked;
+        let conteudo9Value = document.getElementById("9_conteudo").checked;
+        let conteudo10Value = document.getElementById("10_conteudo").checked;
+  
+        let notaconteudo = 0;
+        let tipopergunta = 0;
+
+        if(conteudo1Value){
+          notaconteudo = 1;
+          tipopergunta = 1;
+        }
+        if(conteudo2Value){
+          notaconteudo = 2;
+          tipopergunta = 1;
+        }
+        if(conteudo3Value){
+          notaconteudo = 3;
+          tipopergunta = 1;
+        }
+        if(conteudo4Value){
+          notaconteudo = 4;
+          tipopergunta = 1;
+        }
+        if(conteudo5Value){
+          notaconteudo = 5;
+          tipopergunta = 1;
+        }
+        if(conteudo6Value){
+          notaconteudo = 6;
+          tipopergunta = 1;
+        }
+        if(conteudo7Value){
+          notaconteudo = 7;
+          tipopergunta = 2;
+        }
+        if(conteudo8Value){
+          notaconteudo = 8;
+          tipopergunta = 2;
+        }
+        if(conteudo9Value){
+          notaconteudo = 9;
+          tipopergunta = 3;
+        }
+        if(conteudo10Value){
+          notaconteudo = 10;
+          tipopergunta = 4;
+        }
+        
+
+        if(notaconteudo != 0 ){
+          let  resposta_pesquisa = document.getElementById("comentario_enviar").value;
+          console.log(resposta_pesquisa);
+          console.log(notaconteudo);
+          console.log(tipopergunta);
+        }
+
+      });
+    </script>
 
   </body>
 </html>
