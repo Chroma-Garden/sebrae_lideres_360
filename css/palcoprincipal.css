@@ -1,0 +1,35 @@
+.background{
+    background: rgb(86,37,124);
+    background: linear-gradient(0deg, rgba(86,37,124,1) 0%, rgba(189,0,78,1) 100%);
+    width: 100%;
+    
+}
+.background .container{
+    max-width: 1370px;
+}
+
+
+#videoCase{
+    margin-bottom: 50px;
+}
+#videoCase h4{
+    color: #fff;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#videoCase iframe {
+    height: 300px;
+}
+#imglogo img{
+    width: 380px;
+    padding: 40px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px){
+    #imglogo img{
+      width: 100%;
+
+    }
+}
