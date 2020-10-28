@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+        <title>Líderes em Movimento Online - 27, 28 E 29 de Outubro</title>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="description" content="SEBRAE - Líderes em Movimento Online">
+        <meta name="keywords" content="sebrae, líderes em movimento, palestras">
+		<style type="text/css" title="Default">
+			/* fullscreen */
+			html {
+				height:100%;
+			}
+			body {
+				height:100%;
+				margin: 0px;
+				overflow:hidden; /* disable scrollbars */
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* remove highlight on tab for iOS/Android */
+			}
+			/* fix for scroll bars on webkit & >=Mac OS X Lion */ 
+			::-webkit-scrollbar {
+				background-color: rgba(0,0,0,0.5);
+				width: 0.75em;
+			}
+			::-webkit-scrollbar-thumb {
+    			background-color:  rgba(255,255,255,0.5);
+			}
+        </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="css360/modalagenda.css">	
+        <link rel="stylesheet" href="css360/modalpdf1.css">		
+        <link rel="stylesheet" href="css360/modalPesquisa.css">
+        <link rel="stylesheet" href="css360/modalselecione.css">
+        <link rel="stylesheet" href="css360/modalselecioneHub.css">
+        <link rel="stylesheet" href="css360/modalvideo2.css">	
+        <link rel="stylesheet" href="css360/modalvideo3.css">
+        <link rel="stylesheet" href="css360/modalvideo4.css">
+        <link rel="stylesheet" href="css360/modalaviso.css">
+        <link rel="stylesheet" href="css360/modalvideoanteriores.css">
+        <link rel="stylesheet" type="text/css" href="content/global.css">
+	</head>
+	<body>
+<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - -->
+
+         <!-- Modal Pesquisa Satisfação-->
+      <div class="modal fade" id="modalPesquisa" tabindex="-1" role="dialog" aria-labelledby="modalPesquisa" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <img src="/img/close.png" alt="close" data-dismiss="modal" aria-label="Close">
+            </div>
+            <div class="modal-body">
+               <div class="nota_conteudo">
+                     <p>Você recomendaria o evento Líderes em movimento para um amigo ou familiar?</p>
+                     <p style="color: white;">Sendo 0 pouco provável, e 10 muito provável.</p>
+                     <div class="nota_conteudo_radio">
+                     <div style="display: flex; flex-direction: row;" >
+                     <label for="conteudo">1</label>
+                     <input type="radio" name="conteudo" id="1_conteudo">
+                     <label for="conteudo">2</label>
+                     <input type="radio" name="conteudo" id="2_conteudo">
+                     <label for="conteudo">3</label>
+                     <input type="radio" name="conteudo" id="3_conteudo">
+                     <label for="conteudo">4</label>
+                     <input type="radio" name="conteudo" id="4_conteudo">
+                     <label for="conteudo">5</label>
+                     <input type="radio" name="conteudo" id="5_conteudo">
+                     </div>
+                     <div style="display: flex; flex-direction: row;" >                  
+                     <label for="conteudo">6</label>
+                     <input type="radio" name="conteudo" id="6_conteudo">
+                     <label for="conteudo">7</label>
+                     <input type="radio" name="conteudo" id="7_conteudo">
+                     <label for="conteudo">8</label>
+                     <input type="radio" name="conteudo" id="8_conteudo">
+                     <label for="conteudo">9</label>
+                     <input type="radio" name="conteudo" id="9_conteudo">
+                     <label for="conteudo">10</label>
+                     <input type="radio" name="conteudo" id="10_conteudo">
+                     </div>
+                  </div>
+               </div>            
+               <div class="comentario" id="campocomentario">
+                  <p id="txtSecondQuestion">Gostaria de deixar algum comentário ou segestão?</p>
+                  <div class="alinha">
+                  <input type="text" name="comentario_enviar" id="comentario_enviar" placeholder="Resposta">
+                  <button type="button" id="enviarPesquisa">Enviar</button>
+                  <!-- <p id="sucess">Feedback Enviado com sucesso!</p> -->
+                  </div>
+               </div>
+            </div>            
+         </div>
+         </div>
+      </div>
+       <!-- Close Modal Pesquisa Satisfação-->
+
+         <!-- Modal Lives Anteriores-->
+         <div class="modal fade" id="modalVideoAnteriores" tabindex="-1" role="dialog" aria-labelledby="modalVideoAnteriores" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <img src="/img/close.png" alt="close" data-dismiss="modal" aria-label="Close">
+                  </div>
+                  <div class="modal-body">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-12 text-center" id="titulo">
+                              <h4>Palestras já realizadas</h4>
+                           </div>
+                           <div class="col-lg-12 col-sm-12" id="diaSelecione">
+                              <button type="button" id="27video">27/OUT</button>
+                               <button type="button" id="28video">28/OUT</button>
+                              <!--<button type="button" id="29video">29/OUT</button> -->
+                           </div>
+                           <div class="col-lg-12 col-sm-12" id="borda">
+                              <div class="row" id="itemVideo27">
+                                 <div class="col-lg-12" id="itemVideo" onclick="OpenLivePlayer('palcoprincipal_27', false)">
+                                 <a href="#"> <div class="row">
+                                       <div class="col-lg-2 col-md-2 col-sm-2" id="lateral">
+                                          <img src="/img/bt_playliveantiga.png" alt="">
+                                       </div>
+                                       <div class="col-lg-10 col-md-10 col-sm-12" id="infoLateral">
+                                          <h6>Palco Principal</h6>
+                                          <p>27/OUT - terça</p>
+                                          <p>Clique e assista</p>
+                                       </div>
+                                    </div></a>
+                                 </div>
+                                 <div class="col-lg-12" id="itemVideo" onclick="OpenLivePlayer('espacotransformar_27', false)">
+                                 <a href="#"> <div class="row">
+                                       <div class="col-lg-2 col-md-2 col-sm-2" id="lateral">
+                                          <img src="/img/bt_playliveantiga.png" alt="">
+                                       </div>
+                                       <div class="col-lg-10 col-md-10 col-sm-12" id="infoLateral">
+                                          <h6>ESPAÇO TRANSFORMAR</h6>
+                                          <p>27/OUT - terça</p>
+                                          <p>Clique e assista</p>
+                                       </div>
+                                    </div></a>
+                                 </div>
+                                 <div class="col-lg-12" id="itemVideo" onclick="OpenLivePlayer('espacoconectar_27', false)">
+                                 <a href="#"> <div class="row">
+                                       <div class="col-lg-2 col-md-2 col-sm-2" id="lateral">
+                                          <img src="/img/bt_playliveantiga.png" alt="">
+                                       </div>
+                                       <div class="col-lg-10 col-md-10 col-sm-12" id="infoLateral">
+                                          <h6>ESPAÇO CONECTAR</h6>
+                                          <p>27/OUT - terça</p>
+                                          <p>Clique e assista</p>
+                                       </div>
+                                    </div></a>
+                                 </div>
+                                 <div class="col-lg-12" id="itemVideo" onclick="OpenLivePlayer('espacoinspirar_27', false)">
+                                 <a href="#"> <div class="row">
+                                       <div class="col-lg-2 col-md-2 col-sm-2" id="lateral">
+                                          <img src="/img/bt_playliveantiga.png" alt="">
+                                       </div>
+                                       <div class="col-lg-10 col-md-10 col-sm-12" id="infoLateral">
+                                          <h6>ESPAÇO INSPIRAR</h6>
+                                          <p>27/OUT - terça</p>
+                                          <p>Clique e assista</p>
+                                       </div>
+                                    </div></a>
+                                 </div>
+                              </div>
+                              <div class="row" id="itemVideo28">
+                                 <div class="col-lg-12" id="itemVideo" onclick="OpenLivePlayer('palcoprincipal_28', false)">
+                                    <a href="#"><div class="row">
+                                       <div class="col-lg-2 col-md-2 col-sm-2" id="lateral">
+                                          <img src="/img/bt_playliveantiga.png" alt="">
+                                       </div>
+                                       <div class="col-lg-10 col-md-10 col-sm-12" id="infoLateral">
+                                          <h6>Palco Principal</h6>
+                                          <p>28/OUT - terça</p>
+                                          <p>Clique e assista</p>
+                                       </div>
+                                    </div></a>
+                                 </div>
+                                 <div class="col-lg-12" id="itemVideo" onclick="OpenLivePlayer('espacotransformar_28', false)">
+                                 <a href="#"><div class="row">
+                                       <div class="col-lg-2 col-md-2 col-sm-2" id="lateral">
+                                          <img src="/img/bt_playliveantiga.png" alt="">
+                                       </div>
+                                       <div class="col-lg-10 col-md-10 col-sm-12" id="infoLateral">
+                                          <h6>ESPAÇO TRANSFORMAR</h6>
+                                          <p>28/OUT - terça</p>
+                                          <p>Clique e assista</p>
+                                       </div>
+                                    </div> </a>
+                                 </div>
+                                 <div class="col-lg-12" id="itemVideo" onclick="OpenLivePlayer('espacoconectar_28', false)">
+                                 <a href="#"> <div class="row">
+                                       <div class="col-lg-2 col-md-2 col-sm-2" id="lateral">
+                                          <img src="/img/bt_playliveantiga.png" alt="">
+                                       </div>
+                                       <div class="col-lg-10 col-md-10 col-sm-12" id="infoLateral">
+                                          <h6>ESPAÇO CONECTAR</h6>
+                                          <p>28/OUT - terça</p>
+                                          <p>Clique e assista</p>
+                                       </div>
+                                    </div></a>
+                                 </div>
+                                 <div class="col-lg-12" id="itemVideo" onclick="OpenLivePlayer('espacoinspirar_28', false)">
+                                    <a href="#"><div class="row">
+                                       <div class="col-lg-2 col-md-2 col-sm-2" id="lateral">
+                                          <img src="/img/bt_playliveantiga.png" alt="">
+                                       </div>
+                                       <div class="col-lg-10 col-md-10 col-sm-12" id="infoLateral">
+                                          <h6>ESPAÇO INSPIRAR</h6>
+                                          <p>28/OUT - terça</p>
+                                          <p>Clique e assista</p>
+                                       </div>
+                                    </div></a>
+                                 </div>
+                              </div>
+                             <!--  <div class="row" id="itemVideo29" onclick="OpenLivePlayer('palcoprincipal_29', false)">
+                                 <div class="col-lg-12" id="itemVideo">
+                                 <a href=""> <div class="row">
+                                       <div class="col-lg-2 col-md-2 col-sm-2" id="lateral">
+                                          <img src="/img/bt_playliveantiga.png" alt="">
+                                       </div>
+                                       <div class="col-lg-10 col-md-10 col-sm-12" id="infoLateral">
+                                          <h6>Palco Principal</h6>
+                                          <p>29/OUT - terça</p>
+                                          <p>Clique e assista</p>
+                                       </div>
+                                    </div></a>
+                                 </div>
+                              </div> -->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Close Modal Lives Anteriores-->
+
+        <!-- Modal Video -->
+        <div class="modal fade" id="modalVideo4" tabindex="-1" role="dialog" aria-labelledby="modalVideo4" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" id="videoplayerheader">                        
+                    </div>
+                    <div class="modal-body" id="videoplayerbody">                        
+                    </div>                
+                </div>
+            </div>
+        </div>
+        <!-- Close Modal Video -->
+
+
+        <!-- Modal Live -->
+        <div class="modal fade" id="modalVideo3" tabindex="-1" role="dialog" aria-labelledby="modalVideo3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header" id="videoliveheader">    
+                    <img src="/img/close.png" alt="close" data-dismiss="modal" aria-label="Close">              
+                </div>
+                <div class="modal-body" id="videolivebody">  
+                    <div class="container-fluid">
+                        <div class="row">                          
+                            <div class="col-lg-12 col-sm-12" id="videoModal3">
+                                <div class="fluid-video" id="liveholder">                                    
+                                </div>
+                                <!-- <input type="text" id="enviaPerguntaSebrae" name="enviaPerguntaSebrae" placeholder="Envie sua pergunta">
+                                <button type="submit" id="btEnviarPergunta">Enviar</button>
+                                <p id="txtPerguntaEnviada"> </p> -->
+                            </div>
+                        </div>
+                    </div>                
+                </div>                
+              </div>
+            </div>
+          </div>
+        <!-- Close Modal Live -->
+
+
+        <!-- Modal Seleção Video PDF-->
+        <div class="modal fade" id="modalSelecione" tabindex="-1" role="dialog" aria-labelledby="modalSelecione" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" id="modalSelecionarHeader">                        
+                    </div>
+                    <div class="modal-body" id="modalSelecionarBody">                        
+                    </div>                
+                </div>
+            </div>
+        </div>
+        <!-- Close Modal Seleção Video PDF-->
+
+
+        <!-- Modal PDF-->
+        <div class="modal fade" id="modalPdf1" tabindex="-1" role="dialog" aria-labelledby="modalPdf1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" id="modalTotemPDFHeader">                        
+                    </div>
+                    <div class="modal-body" id="modalTotemPDFBody">                        
+                    </div>                
+                </div>
+            </div>
+        </div>
+        <!-- Close Modal PDF-->        
+
+
+         <!-- Modal Totem Video-->
+        <div class="modal fade" id="modalVideo2" tabindex="-1" role="dialog" aria-labelledby="modalVideo2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" id="modalTotemVideoHeader">                        
+                    </div>
+                    <div class="modal-body" id="modalTotemVideoBody">  
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <!-- Close Modal Totem Video-->
+
+
+        <!-- Modal Seleção Networding Chat-->
+        <div class="modal fade" id="modalSelecioneHub" tabindex="-1" role="dialog" aria-labelledby="modalSelecioneHub" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="/img/close.png" alt="close" data-dismiss="modal" aria-label="Close">
+                        </div>
+                        <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="col-lg-12 col-sm-12" >
+                                <h6>Networking</h6>
+                                <p>Conecte-se com líderes da sua cidade e estado!</p>
+                            </div>                            
+                            <div class="row" >
+                                <div class="col-lg-6 col-sm-12" >
+                                    <div id="download" onclick="OpenChat()">
+                                    <img src="/img/bt_chat.png" alt="">
+                                    <p></p>
+                                    <p></p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-sm-12" >
+                                    <div id="download" onclick="window.open('/networking/', '_blank')">
+                                    <img src="/img/bt_networking.png" alt="">
+                                    <p></p>
+                                    <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <!-- Modal Seleção Networding Chat-->
+
+
+        <!--Modal Agenda-->
+        <div class="modal fade" id="modalAgenda" tabindex="-1" role="dialog" aria-labelledby="modalAgenda" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <img src="/img/close.png" alt="close" data-dismiss="modal" aria-label="Close">
+                  </div>
+                  <div class="modal-body">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-lg-12">
+                              <div class="col-lg-12" id="titulo">
+                                 <h4>Selecione o dia:</h4>
+                              </div>
+                           </div>
+                           <div class="col-lg-12 col-sm-12" id="diaSelecione">
+                              <button type="button" id="27">27/OUT</button>
+                              <button type="button" id="28">28/OUT</button>
+                              <button type="button" id="29">29/OUT</button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="container">
+                        <div class="row" id="itemAgenda27">
+                           <div class="col-lg-12" id="itemAgenda">
+                              <div class="row">
+                                 <div class="col-lg-4" id="btnAgenda">
+                                    <button onclick="GoToLivePalcoPrincipal()">Palco Principal</button>
+                                    <button id="exibe">Acessar Biografia</button>
+                                 </div>
+                                 <div class="col-lg-8" id="infoAgenda">
+                                    <p>09:00h - DIÁLOGO DOS DIRIGENTES DO SEBRAE.</p>
+                                    <p>Vitor Roberto Tioqueta - Diretor Superintendente do SEBRAE - PR.</p>
+                                    <p>Carlos Melles - Diretor Presidente do SEBRAE - NACIONAL.</p>
+                                    <p>Darci Piana - Presidente do Conselho deliberativo do SEBRAE - PR e Vice-governador do Paraná.</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12" id="itemAgenda">
+                              <div class="row">
+                                 <div class="col-lg-4" id="btnAgenda">
+                                    <button onclick="GoToLivePalcoPrincipal()">Palco Principal</button>
+                                    <button id="exibe1">Acessar Biografia</button>
+                                 </div>
+                                 <div class="col-lg-8" id="infoAgenda">
+                                    <p>9:30h - COMO LIDERAR UMA GRANDE TRANSFORMAÇÃO</p>
+                                    <p>Tema: Você estará de frente com Sugata Mitra. Um líder que revolucionou o acesso à educação para milhares de crianças, criador da Escola da Nuvem e autor de um dos TED Talks mais aclamados da história</p>
+                                    <p>Sugata Mitra: Cientista, Founder da Escola da Nuvem e autor de um dos TED TALKS mais celebrados da história.</p>
+                                    <p>Moderador: Julio Cezar Agostini - Diretor de Operações do SEBRAE - PR.</p>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info1" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/sugata_mitra.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide1"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Sugata Mitra</p>
+                                       <p>Sugata Mitra é um cientista da computação indiano e teórico da educação que atua como professor de tecnologia educacional na Escola de Educação, Ciências da Comunicação e Linguagem da Universidade de Newcastle, Inglaterra. Foi o idealizador da School in the Cloud, na qual em um TED emocionou o mundo com sua ideia com um vídeo que hoje já tem mais de 3,5 milhões de views.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12" id="itemAgenda">
+                              <div class="row">
+                                 <div class="col-lg-4" id="btnAgenda">
+                                    <button onclick="GoToLiveEspacoTransformar()">Espaço Transformar</button>
+                                    <button id="exibe2">Acessar Biografia</button>
+                                 </div>
+                                 <div class="col-lg-8" id="infoAgenda">
+                                    <p>10:40h - ROTAS PARA UM BRASIL MELHOR: DESAFIOS E OPORTUNIDADES PARA OS LÍDERES ATUAIS</p>
+                                    <p>Tema: O contexto atual é desafiador, mas através de uma análise profunda sobre a diversidade de contextos brasileiros, é possível trilhar novos caminhos, criar oportunidades e adaptar às constantes transformações.</p>
+                                    <p>Rosana Pinheiro Machado: Cientista social e antropóloga no Departamento de Ciências Políticas e Sociais da Universidade de Bath, no Reino Unido.</p>
+                                    <p>Moderador: Julio Cezar Rezende de Freitas - Diretor do SEBRAE - RJ.</p>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info2" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/rosana_pinheiro_machado.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide2"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Rosana Pinheiro Machado</p>
+                                       <p>Cientista social e antropóloga. Atualmente é Professora de Desenvolvimento Internacional do Departamento de Políticas Públicas da University of Bath, na Inglaterra. É pesquisadora do Australian Research Council no projeto New Consumer Cultures in the Global South. Já lecionou e pesquisou nas Universidades de Harvard e Oxford. Autora de sete livros, entre ele o best-seller “Amanhã Vai ser Maior, o que aconteceu com o Brasil e as possíveis rotas de fuga para a crise atual”pela editora planeta. Rosana é considerada uma das pioneiras no de trabalho de campo na China, e seu trabalho premiado por diversas instituições é uma referência na Sinologia do Brasil. Dedica-se aos temas desenvolvimento internacional, como foco nos temas de trabalho, produção, consumo e mercado e pobreza nos país emergentes como o Brasil e a China.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12" id="itemAgenda">
+                              <div class="row">
+                                 <div class="col-lg-4" id="btnAgenda">
+                                    <button onclick="GoToLiveEspacoTransformar()">Espaço Transformar</button>
+                                    <button id="exibe3">Acessar Biografia</button>
+                                 </div>
+                                 <div class="col-lg-8" id="infoAgenda">
+                                    <p>11:40h - JOVENS LÍDERES E O NOVO PROTAGONISMO</p>
+                                    <p>Tema: Como pensam os jovens que estão protagonizando transformações no mundo a partir de novos paradigmas? Quais suas percepções e realizações? Um olhar sobre o presente e o futuro da liderança em um debate com 3 jovens que já estão deixando suas marcas no mundo.</p>
+                                    <p>KondZilla: Fundador da KondZilla Filmes e Kondzilla Records, a maior produtora de conteúdo musical do Youtube.</p>
+                                    <p>Tomás de Lara: Cofundador Cidades+B, conselheiro do Sistema B Brasil e do CEBDS (Conselho Empresarial Brasileiro para o Desenvolvimento Sustentável).</p>
+                                    <p>Katú Mirim: Ativista Indígena, fundadora do portal de Visibilidade Indígena e do Coletivo Tibira.</p>
+                                    <p>Moderador: Celso Garcia - Especialista em desenvolvimento de competências socioemocionais, teve estudo citado no último Relatório de Desenvolvimento Humano da ONU, e levou o ensino de valores humanos junto com o PNUD (Programa das Nações Unidas para o Desenvolvimento) a cidades desprovidas de oportunidades.</p>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info3" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/KondZilla.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide3"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>KondZilla</p>
+                                       <p>Konrad Dantas é um produtor, empresário e fundador da holding de comunicação KondZilla. Em 2012 criou o maior canal de YouTube do Brasil, hoje com mais de 60 milhões de seguidores e 31 bilhões de visualizações. Criou e dirigiu a série Sintonia para a Netflix, a mais assistida do Brasil em 2019 e também vencedora do Grande Prêmio do Cinema Brasileiro 2020 na categoria série de ficção para TV/OTT. Há quase 10 anos mescla publicidade e audiovisual com a indústria da música, promovendo centenas de talentos das favelas para o mundo. Em 2019 foi reconhecido pela ONU como um dos 100 afrodescendentes mais influentes do mundo</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info3" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/imgpalestrante.png" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide3"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Tomás de Lara</p>
+                                       <p>Cofundador e colíder do Cidades+B (iniciativa global do movimento de Empresas B), conselheiro do Sistema B Brasil, do CEBDS (Conselho Empresarial Brasileiro para o Desenvolvimento Sustentável) e da agropecuária Estância do Chalé. Professor em cursos de inovação econômica no Brasil e outros países. Administrador de empresas, com master em comunicação digital, Tomás é especialista em cultura colaborativa e economia sustentável. Seu trabalho tem foco na criação e desenvolvimento de organizações que trabalham em rede e fomentam uma economia centrada no desenvolvimento humano e integrado à natureza.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info3" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/katu_mirim.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide3"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Katú Mirim</p>
+                                       <p>Indígena, rapper, atriz, palestrante e creator. Ativista indígena, fundadora do midiática TAG #indionaoefantasia. Fundadora do portal Visibilidade indígena e do coletivo Tibira - Indigenas LGBTQ. Katú é reconhecida por suas letras, que através do rap/trap, reconta a história da colonização pela ótica indígena e por levantar questões, até então pouco discutidas no cenário musical atual, como a demarcação de terras, o indígena no contexto urbano, o resgate da ancestralidade, o uso indiscriminado da cultura indígena e a forma como são tratados os indígenas no Brasil.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info3" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/celso_garcia.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide3"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Celso Garcia</p>
+                                       <p>Graduado em Psicologia, PhD Researcher em Psicobiologia pela Universidade de São Paulo, Mestre em Administração de Empresas com ênfase em organizações e mudança pela Universidade Positivo. Especialista em Gestão do Treinamento e Desenvolvimento de Pessoas pela Escola de Negócios da PUC/PR, pós-graduado em Gestão de Pessoas pela FGV/RJ, e em Inovação pela Université de Technologie de Compiègne/França-CIETEP. É professor da FGV, consultor organizacional atuando na área de Training The Trainer, desenvolvimento de competências socioemocionais e mudança de comportamento. Criou o Projeto Turma de Valor, onde atendeu mais de 20.000 crianças, promovendo uma educação orientada a valores humanos. É o autor da Academia Andina de Andragogia, aplicada no Brasil, Argentina, Peru, Chile, Panamá e México para os demais países da América Latina. Teve seu trabalho citado no último Relatório de Desenvolvimento Humano da ONU.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12" id="itemAgenda">
+                              <div class="row">
+                                 <div class="col-lg-4" id="btnAgenda">
+                                    <button onclick="GoToLiveEspacoConectar()">Espaço Conectar</button>
+                                    <button id="exibe4">Acessar Biografia</button>
+                                 </div>
+                                 <div class="col-lg-8" id="infoAgenda">
+                                    <p>10:40h - PAINEL: LIDERANÇA E PROTAGONISMO : QUEBRANDO BARREIRAS E GERANDO RESULTADOS</p>
+                                    <p>Tema: Conheça a história de três líderes que já estão colhendo resultados concretos a partir de iniciativas que estão deixando legados positivos em suas comunidades. Um painel para mergulhar nas estratégias que tornaram esses projetos em grandes referências.</p>
+                                    <p>Silvana Bahia: Codiretora executiva do Olabi e Coordenador da iniciativa PretaLab - projeto de estímulo às mulheres negras nas tecnologias e inovação.</p>
+                                    <p>Jacson Fressato: Hacker ativista, arquiteto de sistemas. Fundador da empresa LAURA, primeira Plataforma de Inteligência Artificial Gerenciadora de Risco do Mundo</p>
+                                    <p>Daniel Cavaretti: Fundador do G10 Favelas, Canal Transformadores e CLAPI</p>
+                                    <p>Moderador: Fabrizio Augusto Guaglianone de Souza Diretor SEBRAE - PA</p>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info4" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/silvana_bahia.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide4"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Silvana Bahia</p>
+                                       <p>Codiretora executiva do Olabi por onde coordena a iniciativa PretaLab - projeto de estímulo às mulheres negras nas tecnologias e inovação. É mestre em cultura e territorialidades pela UFF e pesquisadora associada do Grupo de Arte e Inteligência Artificial da USP e do Grupo de pesquisa em Políticas e Economia da Informação e Comunicação da UFRJ.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info4" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/jackson_fressatto.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide4"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Jacson Fressato</p>
+                                       <p>Hacker ativista, arquiteto de sistemas. Focado em desenvolver tecnologia de ponta, acessível e eficiente para impactar a vida de 1 bilhão de pessoas no mundo todo. Fundador da empresa LAURA, primeira Plataforma de Inteligência Artificial Gerenciadora de Risco do Mundo, motivado pela morte de sua filha (Laura) com 28 dias de vida, por uma doença que acomete várias crianças recém nascidas.Presidente do Instituto Laura Fressatto.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info4" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/daniel_cavaretti.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide4"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Daniel Cavaretti</p>
+                                       <p>Empreendedor, advogado e Gestor de Projetos/Processos. Especialista em inovação,Modelagem de Negócios e Impacto Social. Estudou e trabalhou na Europa e nos Estados Unidos e teve a oportunidade de conhecer e participar de projetos nos principais centros de Inovação do mundo. Ministrou palestras em diversas Universidades e participou como mentor e jurado em eventos e programas de inovação aberta/empreendedorismo (TEDx Speaker, Inovativa, Impact Tank, Associação Brasileira de Startups etc). Organizou projetos de desenvolvimento econômico sustentável em favelas em todo Brasil e em comunidades em países da América do Sul e África.Por vários anos coordenou projetos e processos envolvendo inovação e a defesa da propriedade intelectual de grandes fabricantes de software/hardwares e de grandes marcas do mundo da moda. Nesses setores, nos últimos anos, também participou de operações de fusões e aquisições / investimentos estrangeiros, bem como, auxiliou diversas startups e programas de inovação aberta. Com atuação forte em todo território nacional, participou presencialmente de negócios em todos os Estados brasileiros e visitou/coordenou projetos em centenas de prefeituras e favelas em todo o Brasil. Fundador do G10 Favelas, Canal Transformadores e CLAPI.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12" id="itemAgenda">
+                              <div class="row">
+                                 <div class="col-lg-4" id="btnAgenda">
+                                    <button onclick="GoToLiveEspacoConectar()">Espaço Conectar</button>
+                                    <button id="exibe5">Acessar Biografia</button>
+                                 </div>
+                                 <div class="col-lg-8" id="infoAgenda">
+                                    <p>12:00h - HISTÓRIAS DE PROTAGONISMO: O QUE O BRASIL TEM DE MELHOR</p>
+                                    <p>Tema: Relato de um casal que viajou mais de 1 milhão de Kilômetros pelo Brasil, identificando brasileiros apaixonados por fazer o bem em suas comunidades através de projetos sociais.</p>
+                                    <p>Caçadores de bons Exemplos: Iara e Eduardo Xavier são viajantes e caçadores de bons exemplos.</p>
+                                    <p>Moderador: Moderador: Fabrizio Augusto Guaglianone de Souza - Diretor SEBRAE - PA.</p>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info5" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/cacadores_bons_exemplos.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide5"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Iara e Eduardo Xavier</p>
+                                       <p>Tudo começou com o casal Iara e Eduardo, que cansados de ouvir notícias ruins resolveram tomar uma atitude...sem patrocínio e nenhum vínculo religioso ou político, venderam tudo o que tinham e saíram em uma viagem em busca de bons exemplos. Pessoas que fazem a diferença na comunidade que vivem, executando algum projeto social. Eles acreditam que existem muito mais ações positivas do que ações negativas no mundo. Percorreram mais de 1 milhão de quilômetros por todos os estados brasileiros (isso equivale a mais de 20 voltas ao redor da circunferência do planeta Terra). Desde 2011 o casal Iara e Eduardo, seguem pelo Brasil com uma missão: conhecer pessoas que deixaram de apenas reclamar e passaram a transformar suas comunidades. A bordo de um carro e sem roteiro pré-definido, eles se depararam com brasileiros apaixonados por fazer o bem, o que os faz enxergar um Brasil que dá certo. Uma viagem em direção ao outro e de auto conhecimento, que passou a inspirar outras pessoas a se juntarem nessa rede do bem para a construção de um mundo melhor. Uma história que nos faz entender que embora a estrada possa ser cheia de armadilhas e desvios, a jornada do bem é infinita e interminável.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12" id="itemAgenda">
+                              <div class="row">
+                                 <div class="col-lg-4" id="btnAgenda">
+                                    <button onclick="GoToLiveEspacoInspirar()">Espaço Inspirar</button>
+                                    <button id="exibe6">Acessar Biografia</button>
+                                 </div>
+                                 <div class="col-lg-8" id="infoAgenda">
+                                    <p>10:45h - A CORAGEM DO FAZER: A RESPONSABILIDADE DE TRANSFORMAR REALIDADES.</p>
+                                    <p>Tema: O que tem a falar o homem que teve a audácia de criar a CUFA (Central Única das Favelas) e transformar esse projeto em uma das maiores instituições representativas da periferia? Não perca essa entrevista com Celso Athayde, que assina também projetos como Favela Holding e do Data Favela.</p>
+                                    <p>Celso Athayde: Fundador da CUFA - Central Única das Favelas, do Favela Holding e do Data Favela. Reconhecido pela ONU e Premiado pela Câmera de Comércio Brasil - Estados Unidos.</p>
+                                    <p>Moderador: Afonso Maria Rocha - Diretor superintendente do SEBRAE - MG.</p>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info6" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/celso_athayde.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide6"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Celso Athayde</p>
+                                       <p>Nasceu na Baixada Fluminense, onde viveu até os seis anos. Aos 16, já havia morado em três favelas, abrigos públicos e na rua. Foi criado na favela do Sapo, na zona oeste do Rio de Janeiro. Celso é autor de 7 livros, dos quais 3 são best sellers. Entre eles, é coautor de “Falcão - Mulheres, Tráfico”, “Falcão - Meninos do Tráfico”, “Cabeça de Porco” e “Um País Chamado Favela”. Celso também é fundador da Central Única das Favelas (CUFA), e com a atuação na instituição adquiriu a bagagem necessária para a criação de um grupo de empresas focadas nas favelas e seus moradores: A Favela Holding, a primeira holding social de que se tem notícia. Atualmente, Celso é CEO da holding que detém mais de 20 empresas, todas com ações em favelas e periferias. Apesar de não ter cursado faculdade, Celso já palestrou em algumas das mais importantes do mundo, como London School Economic, Harvard, MIT, Columbia University, entre outras. Celso criou e liderou ações que se transformaram em referência como o Prêmio Anu, para área social, prêmio Hutúz, que premiava os maiores destaques do rap, no evento de mesmo nome, que se tornou o maior de hip hop da América Latina e a Taça das Favelas, maior competição de futebol</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12" id="itemAgenda">
+                              <div class="row">
+                                 <div class="col-lg-4" id="btnAgenda">
+                                    <button onclick="GoToLiveEspacoInspirar()">Espaço Inspirar</button>
+                                    <button id="exibe7">Acessar Biografia</button>
+                                 </div>
+                                 <div class="col-lg-8" id="infoAgenda">
+                                    <p>11:45h - O QUE SIGNIFICA LIDERAR EM UM MUNDO DE INTENSAS TRANSFORMAÇÕES.</p>
+                                    <p>Tema: Novos paradigmas tecnológicos e comportamentais desafiam diariamente os protagonistas que atuam em todos os níveis de liderança. Quais os insights necessários para compreender os códigos que ditam as regras do momento atual e como atuar diante desses novos conceitos?</p>
+                                    <p>Martin Restrepo: Palestrante da Hyper Island, Facilitador e Designer de Aprendizado, Co-fundador da Editacuja Transmedia & Appiario, Prêmio do MIT IU35</p>
+                                    <p>Moderador: Luciano Rossi Pinheiro - Diretor Técnico do SEBRAE - SC.</p>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info7" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/martin_restrepo.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide7"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Martin Restrepo</p>
+                                       <p>Palestrante, Facilitador e Designer de Aprendizado da Hyper Island. Inovador social e educacional, empresário, MIT Innovator Under 35 Awardee. Co-fundador da Editacuja Transmedia & Appiario.Embaixador da Aeternity Blockchain. Embaixador do Bitnation Latam. Membro do Conselho de Supervisão do Global Innovation Gathering. Consultor de pesquisa do Mozilla Internet Health Report. Global EdTech Awards - mais promissoras startups de EdTech, modelo de aprendizagem combinada do BID na América Latina. Grupo ProXXIma - Meio e Mensagem entre os 50 melhores profissionais do mercado brasileiro de comunicação. Prêmio especial InnovaApps + com Google e BBVA. Prêmio Excelência em inovação pública digital - ExcelGEL. Prêmio de mobilização social digital pela Paz na Colômbia - Ministério das TICs. 100 ideias mudando o mundo na Editora Educação Semana.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row" id="itemAgenda28">
+                           <!-- dia 28 -->
+                           <div class="col-lg-12" id="itemAgenda">
+                              <div class="row">
+                                 <div class="col-lg-4" id="btnAgenda">
+                                    <button onclick="GoToLivePalcoPrincipal()">Palco Principal</button>
+                                    <button id="exibe">Acessar Biografia</button>
+                                 </div>
+                                 <div class="col-lg-8" id="infoAgenda">
+                                    <p>09:00h - CERIMÔNIA DE ABERTURA - DIÁLOGO DOS DIRIGENTES DO SEBRAE.</p>
+                                    <p>Julio Cezar Agostini: Diretor de Operações do SEBRAE - PR.</p>
+                                    <p>Bruno Quick - Diretor Técnico do SEBRAE - NACIONAL.</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12" id="itemAgenda">
+                              <div class="row">
+                                 <div class="col-lg-4" id="btnAgenda">
+                                    <button onclick="GoToLivePalcoPrincipal()">Palco Principal</button>
+                                    <button id="exibe8" class="exibe8">Acessar Biografia</button>
+                                 </div>
+                                 <div class="col-lg-8" id="infoAgenda">
+                                    <p>09:30h - AND: FAZER A DIFERENÇA OTIMIZANDO PARADOXOS OU DILEMAS.</p>
+                                    <p>Como fazer uma diferença positiva? Superando dois obstáculos: resistência à mudança e polarização. Uma conversa que levará você a refletir sobre como resolver problemas complexos</p>
+                                    <p>Barry Johnson: PhD em Desenvolvimento Organizacional. Creator POLARITY MAP AND PRINCIPLES.</p>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info8" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/barry_johnson.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide8"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Barry Johnson</p>
+                                       <p>Barry se formou na University of Wisconsin - Eau Claire em 1965. Participou do "Programa de Estágio Secular" no Union Theological Seminary na cidade de Nova York. Enquanto estava lá, ele embranqueceu parte do impacto dessa cultura branca dominadora sobre aqueles marginalizados por essa cultura dominadora, pois é desumanizador para ambas as culturas. Houve e há muita injustiça para entender como desenvolver organizações, comunidades e nações que funcionassem bem para todos, em vez de apenas protestar quando se tornassem opressores para muitos. Em 1975, o primeiro mapa de polaridade surgiu. Este mapa de polaridade e princípios eram aplicáveis ​​a qualquer sistema, independentemente do tamanho. Desde então, ele tem aprendido com pessoas de todo o mundo, como aplicar o Mapa de Polaridade e os princípios às suas situações. Em 1992, Barry escreveu o Polarity Management, Identifying and Managing Unsolvable Problems. Em 1994 ele fundou a ferramenta de avaliação de polaridade. O primeiro Programa de Domínio de Dois anos em Pensamento em Polaridade começou em 2005. Em 2009, ele foi co-autor de um segundo livro com Roy Oswald, Gerenciando Polaridades em Congregações. Em 2011, Barry juntou-se a Leslie DePol e Robert "Jake" Jacobs para fundar a Polarity Partnerships, LLC. O ponto culminante deste trabalho é uma comunidade de praticantes da polaridade que são autores de vários livros relacionados à polaridade. Em 2005, Barry recebeu o prêmio Lifetime Achievement da Organization Development Network, Advancing the Practice and Theory of OD.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12" id="itemAgenda">
+                              <div class="row">
+                                 <div class="col-lg-4" id="btnAgenda">
+                                    <button onclick="GoToLiveEspacoTransformar()">Espaço Transformar</button>
+                                    <button id="exibe9" class="exibe9">Acessar Biografia</button>
+                                 </div>
+                                 <div class="col-lg-8" id="infoAgenda">
+                                    <p>10:40h - PALESTRA LEADERS SURF WITH GRACE</p>
+                                    <p>De que atributos os grandes líderes podem se apropriar para surfar as ondas de incerteza, preservando valores e ética? Uma palestra com a especialista Rosemary Napper sobre os segredos de adaptação das lideranças fortes ao responderem com rapidez às alterações externas, ao mesmo tempo que conduzem melhorias para que a cultura de transformação seja assertiva.</p>
+                                    <p>Rosemary Napper: Coach de líderes atuando em níveis estratégicos, treinadora e supervisora em Análise Transacional Educacional e Organizacional. É diretora da TAWorks, baseada em Oxford no Reino Unido, empresa de consultoria que provê desenvolvimento organizacional e em gestão, coaching executivo e de liderança.</p>
+                                    <p>Moderador: Renato Morandi</p>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info9" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/rosemary_napper.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide9"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Rosemary Napper</p>
+                                       <p>Coach de líderes atuando em níveis estratégicos, treinadora e supervisora em Análise Transacional Educacional e Organizacional - uma psicologia social que provê insights sobre liderança, cultura, aprendizagem, estruturas e dinâmicas organizacionais. Atualmente escreve um livro sobre estes assuntos mesclando teoria e experiência, é co-autora do livro Táticas, escreveu capítulos nos livros “Life Scripts” e “The Complete Handbook of Coaching”. Graduada em ciências sociais e mestre em educação, possui experiência em liderar setores públicos e times de desenvolvimento organizacional em organização de grande porte. Hoje é diretora da TAWorks, baseada em Oxford no Reino Unido, empresa de consultoria que provê desenvolvimento organizacional e em gestão, coaching executivo e de liderança com programas na TAworks, in company e on-line atuando com clientes e parceiros dos seis continentes. No Brasil está associada ao ICP.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12" id="itemAgenda">
+                              <div class="row">
+                                 <div class="col-lg-4" id="btnAgenda">
+                                    <button onclick="GoToLiveEspacoTransformar()">Espaço Transformar</button>
+                                    <button id="exibe10" class="exibe10">Acessar Biografia</button>
+                                 </div>
+                                 <div class="col-lg-8" id="infoAgenda">
+                                    <p>12:00h - PAINEL: COMPETÊNCIAS PARA LIDERANÇAS DO FUTURO</p>
+                                    <p>A complexidade das responsabilidades assumidas por grandes líderes precisa ser acompanhada do aprimoramento de habilidades fundamentais. De que competências o líder do presente deve se apropriar para se manter relevante, se tornar mais eficiente e entregar mais valor? Especialistas debatem o desenvolvimento humano para os moldes das lideranças do futuro.</p>
+                                    <p>Leny Kyrillos: Comentarista semanal na Rádio CBN na coluna “Comunicação e Liderança” e coautora dos livros “Voz e Corpo na TV – A fonoaudiologia a serviço da comunicação”, “Comunicar para Liderar” e “Comunicação e Liderança”.</p>
+                                    <p>Pedro Mello: Empreendedor, reconhecido como Global Leader for Tomorrow pelo World Economic Forum e autor dos livros Open Leaders - proibido para mentes fechadas, Startup Brasil e Guia de sobrevivência do empreendedor.</p>
+                                    <p>Allan Costa: Membro do Harvard Business School Startup Angels. Autor dos livros "60 Dias em Harvard" e “Rock in Rio – A Arte de Sonhar e Fazer Acontecer”, colunista de vários veículos de âmbito nacional e palestrante em dois TEDx. Possui experiência profissional em mais de 50 países e quase mil palestras realizadas, nos últimos dez anos, no Brasil, América Latina, EUA, Europa, África e Ásia.</p>
+                                    <p>Moderadora : Rosângela Angonese - Coordenadora Polo de Liderança SEBRAE.</p>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info10" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/leny_kyrillos.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide10"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Leny Kyrillos</p>
+                                       <p>Fonoaudióloga pela Universidade Federal de São Paulo, Especialista em Voz pelo Conselho Federal de Fonoaudiologia e Mestre e Doutora em Ciências dos Distúrbios da Comunicação pela Universidade Federal de São Paulo. Leny Kyrillos é comentarista semanal na Rádio CBN na coluna “Comunicação e Liderança” e coautora dos livros “Voz e Corpo na TV – A fonoaudiologia a serviço da comunicação” (Editora Globo – 2003 e “Comunicar para Liderar” (Editora Contexto – 2015) e “Comunicação e Liderança” (Editora Contexto – 2019)</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info10" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/pedro_mello.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide10"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Pedro Mello</p>
+                                       <p>Pedro Mello A marca mais presente da minha essência é a inovação e a transformação. Esse traço, presente em toda a minha vida pessoal e profissional, me concedeu, em 2002, a honra de ser reconhecido como Global Leader for Tomorrow pelo World Economic Forum, depois de ter criado a primeira incubadora de negócios digitais no Brasil. Atualmente, atuo na Open Leaders na implantação do modelo Open que venho desenvolvendo nos últimos anos em diversas organizações e segmentos de mercado. Tenho mais de 20 anos de experiência em redes de franquia e varejo, desde a gestão de redes até membro e presidente da Comissão de Ética da Associação Brasileira de Franchising. Antes disso passei por algumas multinacionais, como Arthur Andersen, Borland e Microsoft até encontrar a minha vocação como empreendedor. Fui também membro do Conselho da Plan International por cinco anos. Tive a oportunidade de publicar os livros Open Leaders - Proibido para Mentes Fechadas, Startup Brasil e Guia de Sobrevivência do Empreendedor, além de produzir diversas séries sobre franchising, como 7 Pecados Capitais do Franchising e Franquias de Alta Performance. Por alguns anos fui colunista da revista Exame e autor do Blog do Empreendedor no Portal Exame. Minha essência é desvendar o ser humano, seu algoritmo. Esse caminho começou aos 30 anos com terapias convencionais, mas continuou com diversos estudos, de religiões a ciências metafísicas das mais diversas. Tudo com o intuito de entender quem sou e me libertar das crenças limitantes que são programadas em nossas mentes ao longo da vida sem sequer percebermos. Sou um idealista movido a quebrar padrões, questionar o status quo e provocar as pessoas a pensar fora da caixa, a sair da sua zona de conforto. Às vezes passo um pouco do ponto, mas como a intenção é sempre boa, os desconfortos se transformam em movimento e o movimento em mudança.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info10" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/allan_costa.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide10"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Allan Costa</p>
+                                       <p>Pai do Lucca e da Mariana. Motociclista, palestrante internacional, empreendedor serial, investidor-anjo, escritor e mentor de startups. É Diretor de Inovação e Alianças da ISH Tecnologia; co-fundador da plataforma AAA Inovação, ao lado de Ricardo Amorim; co-fundador da Curitiba Angels, da Eticca Compliance, e da B! Storytelling. Investidor de 15 startups e membro do Harvard Business School Startup Angels. Autor dos livros "60 Dias em Harvard" e “Rock in Rio – A Arte de Sonhar e Fazer Acontecer”, colunista de vários veículos de âmbito nacional e palestrante em dois TEDx. Possui experiência profissional em mais de 50 países e quase mil palestras realizadas, nos últimos dez anos, no Brasil, América Latina, EUA, Europa, África e Ásia. Ocupou a Presidência da CELEPAR (Companhia de Tecnologia da Informação e Comunicação do Paraná), a Presidência da Coopecard e a Superintendência e a Diretoria Técnica do SEBRAE/PR.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12" id="itemAgenda">
+                              <div class="row">
+                                 <div class="col-lg-4" id="btnAgenda">
+                                    <button onclick="GoToLiveEspacoConectar()">Espaço Conectar</button>
+                                    <button id="exibe11" class="exibe11">Acessar Biografia</button>
+                                 </div>
+                                 <div class="col-lg-8" id="infoAgenda">
+                                    <p>10:40h - PAINEL: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL COMO VETORES DE TRANSFORMAÇÃO.</p>
+                                    <p>Como atingir a excelência e resultados práticos sustentáveis liderando a partir da lógica dos objetivos de desenvolvimento da ONU? Um painel para colocar as ODS como parte significativa dos princípios de liderança.</p>
+                                    <p>Thalita Gelenske: Fundadora e CEO da Bland Edu, Forbes Under 30, Global Shapers, selecionada como representante brasileira no Fórum Econômico Mundial em Davos.</p>
+                                    <p>Caio Esteves: Fundador da Place for Us e primeira empresa brasileira especializada em place branding e especialista em cidades inteligentes.</p>
+                                    <p>Carlo Pereira: Diretor-executivo da Rede Brasil do Pacto Global da ONU.</p>
+                                    <p>Moderadora: Eliane Ribeiro Chaves - Diretora Técnica SEBRAE - MT.</p>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info11" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/thalita_gelenske.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide11"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Thalita Gelenske</p>
+                                       <p>Fundadora e CEO da Blend Edu, startup que já tem em seu portfólio empresas como 3M, TIM, Reserva, Movile, Grupo Fleury, TechnipFMC, Prumo Logística, brMalls etc. Thalita também está presente na lista da Forbes Under 30 de 2019, como uma dos 6 jovens destaques na categoria Terceiro Setor e Empreendedorismo Social. Ela escreve mensalmente para a coluna Mind the gap: diversidade nas empresas, no blog da HSM Management.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info11" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/caio_esteves.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide11"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Caio Esteves</p>
+                                       <p>Pioneiro da abordagem de marcas-lugar no país, entendendo o place branding como algo muito além das identidades visuais ou das campanhas de marketing, Escreveu em 2016 o livro “Place Branding”, primeiro sobre place branding do país e um dos pouquíssimos títulos disponíveis em língua portuguesa. Presente na discussão internacional sobre o tema é colaborador e jurado do City Nation Place, congresso internacional de Place Branding em Londres, membro do Institute of Place Management de Manchester- UK, membro do Research Panel do The Place Brand Observer, associado a IPBA- International Place Branding Associaton e revisor convidado do Place Branding & Public Diplomacy. Coordenou a Pós-graduação Branding Experience no IED-SP. Idealizou o MBA Place Branding nas Faculdades Integradas Rio Branco em São Paulo. É professor na pós graduação das disciplinas de branding e place branding no IED-SP, Rio Branco-SP, SENAC-SP, ANPROTEC-RJ e Alfa- GO, e na graduação do IED-SP. Colabora sistematicamente com diversos sites e portais nacionais e internacionais como The City Fix Brasil, O Futuro Das Coisas, ArchDaily, Place Brand Observer entre outros. Como alestrante nacional e internacional aborda os assuntos ligados a cidade como a relação de turismo e as marcas-lugar, o engajamento comunitário no processo de construção das marcas lugar, marcas-lugar e ambiente inovadores, qualidade dos espaços-públicos, place branding e placemaking.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12" id="itemAgenda">
+                              <div class="row">
+                                 <div class="col-lg-4" id="btnAgenda">
+                                    <button onclick="GoToLiveEspacoConectar()">Espaço Conectar</button>
+                                    <button id="exibe12" class="exibe12">Acessar Biografia</button>
+                                 </div>
+                                 <div class="col-lg-8" id="infoAgenda">
+                                    <p>12:00h - PAINEL: LIDERANÇA NA ERA DO FEMININO.</p>
+                                    <p>Lilian Leandro: Diretora de Expansão do Grupo Mulheres do Brasil, hoje presente em 112 diferentes localidades no Brasil e no exterior.</p>
+                                    <p>Onilia Araújo: Graduada em Ciências Contábeis (UFRGS), é ativista feminista, LGBTQ+, mãe do Pietro e luta pela valorização e desenvolvimento econômico do povo negro. É fundadora da empresa I.CON (Inovação Contábil) e integra a diretoria da Odabá, Associação de Afroempreendedorismo com sede em Porto Alegre.</p>
+                                    <p>Gisele Accioly: Graduada em Ciências Contábeis (UFRGS), é ativista feminista, LGBTQ+, mãe do Pietro e luta pela valorização e desenvolvimento econômico do povo negro. É fundadora da empresa I.CON (Inovação Contábil) e integra a diretoria da Odabá, Associação de Afroempreendedorismo com sede em Porto Alegre.</p>
+                                    <p>Moderador: Maristela de Oliveira França - Diretora Técnica do SEBRAE - MS</p>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info12" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/onilia_araujo.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide12"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Onilia Araújo</p>
+                                       <p>Empresária contábil, empreendedora social, netweaver, ativista em diversidade sobre raça, gênero e LGBTQ+ e mãe do Pietro. É fundadora da empresa I.CON (Inovação Contábil), integra a diretoria da Odabá - Associação de Afroempreendedorismo que luta pela valorização e desenvolvimento econômico do povo negro, pois desde cedo entendeu que precisaria lutar mais que a maioria para conquistar o seu dinheiro. Antes de aterrissar no mundo do empreendedorismo, Onília vivenciou outras experiências profissionais: começou como garçonete, foi vendedora de seguros e até chegou a jogar futebol profissionalmente. O trabalho em uma rede de hotéis e a ajuda dos patrões para acessar a graduação de Ciências Contábeis na UFRGS permitiram que ela ampliasse ainda mais seus horizontes, descobrindo que o céu não era o limite para suas ambições. Nas aulas da faculdade, percebeu que não se encaixaria nas formalidades dos escritórios convencionais de contabilidade, foi aí então que teve seu primeiro estalo para o mundo do empreendedorismo, trazendo para a criação deste negócio, o DNA de inovação e a visão sistêmica que fazem parte da sua personalidade. Com o sucesso profissional veio a necessidade de compartilhar um pouco de seu conhecimento. Veio a Escola Convexo, um negócio social na área educacional que ousou trabalhar no desenvolvimento de estudantes de escolas públicas, que potencializam sua capacidade de liderança a partir de experiências e aprendizado sobre empreendedorismo. A decisão de ser mãe trouxe à tona a ativista racial. Pietro nasceu, filho de duas mães e, junto com ele veio a Odabá - Associação de Afroempreendedorismo, da qual Onilia faz parte do grupo de diretores. O objetivo é trabalhar para o “empoderamento econômico da população negra” visando construir um futuro desejável onde a equidade e a pluralidade na tomada de decisões do nosso país sejam muito mais do que uma utopia.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info12" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/gisele_accioly.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide12"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>
+                                          Gisele Accioly
+                                       </p>
+                                       <p>Seu trabalho tem foco no desenvolvimento humano e o autoconhecimento, a partir do estudo de mitos e arquétipos, especialmente a partir da ótica de Carl Gustav Jung, James Hillman. Psicóloga clínica, escritora, palestrante, consultora e diretora da Psicoescola, desenvolve equipes e indivíduos para o alto desempenho, por meio da expressão do potencial individual e coletivo. Pesquisadora de longa data sobre o “feminino” e a atualidade. Busca utilizar a experiência como caminho para as pessoas a encontrar suas próprias respostas. É uma das idealizadoras do “Inteiras para Mulherar o Mundo”, programa que recebeu o “Prêmio Ser Humano” – Luiz Hamilton Berton (PSH), em 2018.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12" id="itemAgenda">
+                              <div class="row">
+                                 <div class="col-lg-4" id="btnAgenda">
+                                    <button onclick="GoToLiveEspacoInspirar()">Espaço Inspirar</button>
+                                    <button id="exibe13" class="info13">Acessar Biografia</button>
+                                 </div>
+                                 <div class="col-lg-8" id="infoAgenda">
+                                    <p>10:40h - O LÍDER AGORISTA.</p>
+                                    <p>Uma palestra que trará para o centro do debate os valores para liderança em tempos de grande complexidade.</p>
+                                    <p>Oscar Motomura: Fundador e principal executivo da Amana-Key, uma das organizações mais especializadas do mundo na área de gestão, estratégia e liderança de organizações complexas dos setores empresarial e governamental, e da sociedade civil.</p>
+                                    <p>Moderador: Jorge Khoury - Diretor do SEBRAE - BA.</p>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info13" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/oscar_motomura.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide13"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Oscar Motomura</p>
+                                       <p>Fundador e principal executivo do Grupo Amana-Key, especialista em gestão, estratégia e liderança. Formado em administração, com especialização em finanças, banking e gestão de tecnologia. Mestrado em psicologia social. Executivo multidisciplinar, transita bem por diferentes campos da gestão e alta administração e tem expertise única na área humana, especialmente em facilitação de diálogos e processos de solução de “equações impossíveis” em grandes grupos, mediação de conflitos, negociações complexas, projetos de integração cultural e gestão de mudanças. Coordenador geral do APG – Programa de Gestão Avançada Amana-Key – e projetos de consultoria. Sua rede de relacionamentos inclui vários dos principais especialistas em gestão do mundo e nomes destacados nas ciências, artes e humanidades.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12" id="itemAgenda">
+                              <div class="row">
+                                 <div class="col-lg-4" id="btnAgenda">
+                                    <button onclick="GoToLiveEspacoInspirar()">Espaço Inspirar</button>
+                                    <button id="exibe14" class="exibe14">Acessar Biografia</button>
+                                 </div>
+                                 <div class="col-lg-8" id="infoAgenda">
+                                    <p>12:00h - PAINEL: SAÍDAS E SOLUÇÕES PARA LIDERAR DIANTE DE UM MUNDO HIPERCONECTADO.</p>
+                                    <p>Data science, fake news e o complexo universo da tecnologia pela perspectiva de três especialistas que vão trazer os desafios e as oportunidades da liderança no atual contexto.</p>
+                                    <p>Ricardo Cappra: Cientista chefe do Cappra Institute e com larga experiência em projetosde análise de dados para grandes empresas multinacionais e governo dos EUA.</p>
+                                    <p>Tai Nalon: Diretora executiva e co-fundadora do Aos Fatos, vencedora do Prêmio Claudio Weber Abramo de Jornalismo de Dados na categoria Inovação em 2019. Foi finalista do Online Journalism Awards 2019 e menção honrosa nos prêmios de excelência de 2019 da Sociedad Interamericana de Prensa.</p>
+                                    <p>Ronaldo Lemos: Advogado, professor e pesquisador brasileiro, um dos criadorores do Marco Civil da Internet e co-autor do Plano Nacional de Internet das Coisas (IoT).</p>
+                                    <p>Moderador: Francisco Saboya Albuquerque Neto - Diretor SEBRAE - PE.</p>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info14" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/ricardo_cappra.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide14"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Ricardo Cappra</p>
+                                       <p>Cientista chefe do Cappra Institute, lidera um time global que pesquisa o impacto dos dados na sociedade e nos negócios, para criar metodologias que acelerem o desenvolvimento analítico de organizações e pessoas. Esses métodos são usados por Governo dos EUA, Gol Linhas Aéreas, Banco Santander, UOL, Whirlpool, Banco Mundial, Rede Globo, Banco Itaú, Unilever, Ambev entre outros grandes players.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info14" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/ronaldo_lemos.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide14"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Ronaldo Lemos</p>
+                                       <p>Advogado, professor e pesquisador brasileiro respeitado internacionalmente, especialista em temas como tecnologia, mídia e propriedade intelectual. É professor da cadeira de Direito da Informática da Faculdade de Direito da Universidade do Estado do Rio de Janeiro (UERJ). Foi nomeado professor visitante da Universidade Columbia (EUA) em janeiro de 2017. É Diretor do Instituto de Tecnologia e Sociedade do Rio de Janeiro e diretor do Creative Commons Brasil. É sócio do escritório Pereira Neto Macedo Advogados, coordenando a área de mídia e propriedade intelectual. Lemos foi um dos principais criadores do Marco Civil da Internet. Em maio de 2020 Lemos tornou-se um dos 20 membros inaugurais do Conselho de Supervisão do Facebook (Facebook Oversight Board). Lemos foi um dos co-autores do Plano Nacional de Internet das Coisas (IoT) comissionado pelo BNDES e pelo Ministério da Ciência, Tecnologia, Inovações e Comunicações (MCTIC)</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+   
+   
+                        <!--dia 29-->
+                        <div class="row" id="itemAgenda29">
+                           <div class="col-lg-12" id="itemAgenda">
+                              <div class="row">
+                                 <div class="col-lg-4" id="btnAgenda">
+                                    <button onclick="GoToLivePalcoPrincipal()">Palco Principal</button>
+                                    <button id="exibe">Acessar Biografia</button>
+                                 </div>
+                                 <div class="col-lg-8" id="infoAgenda">
+                                    <p>9:00h - DIÁLOGO DOS DIRIGENTES DO SEBRAE.</p>
+                                    <p>Jose Gava Neto: Diretor de Administração de Finanças do SEBRAE - PR.</p>
+                                    <p>Eduardo Diogo: Diretor de Administração e Finanças SEBRAE - NACIONAL.</p>
+                                 </div>
+                              </div>
+                           </div>
+   
+   
+                           <div class="col-lg-12" id="itemAgenda">
+                              <div class="row">
+                                 <div class="col-lg-4" id="btnAgenda">
+                                    <button onclick="GoToLivePalcoPrincipal()">Palco Principal</button>
+                                    <button id="exibe">Acessar Biografia</button>
+                                 </div>
+                                 <div class="col-lg-8" id="infoAgenda">
+                                    <p>9:20h - A JORNADA DA LIDERANÇA: MINUTOS DE INSPIRAÇÃO.</p>
+                                    <p>Se você pudesse resgatar os principais aprendizados dos últimos dias, como faria? Nuno Arcanjo traduzirá a jornada dos Líderes em Movimento através de uma facilitação criativa, profunda e poética. Um momento para absorver novos insights sobre o evento.</p>
+                                    <p>Nuno Arcanjo Artista múltiplo, inquieto e em busca de inovação e reInvenção. Criador da Facilitação Poética.</p>
+                                 </div>
+                              </div>
+                           </div>
+   
+                           
+                           <div class="col-lg-12" id="itemAgenda">
+                              <div class="row">
+                                 <div class="col-lg-4" id="btnAgenda">
+                                    <button onclick="GoToLivePalcoPrincipal()">Palco Principal</button>
+                                    <button id="exibe15" class="exibe15">Acessar Biografia</button>
+                                 </div>
+                                 <div class="col-lg-8" id="infoAgenda">
+                                    <p>9:40h - PAINEL: COMO O CÉREBRO HUMANO CONSTRUIU A MODERNIDADE.</p>
+                                    <p>Já pensou em compreender a liderança pela perspectiva da Neurociência? Uma conversa que trará o objetivo de identificar o desenvolvimento humano a partir da interface tangível do conhecimento do cérebro e suas potencialidades.</p>
+                                    <p>Miguel Nicolelis: Médico e Cientista brasileiro, considerado pela Revista Época um dos 100 brasileiros mais influentes.</p>
+                                    <p>Carla Tieppo: Palestrante e consultora e aplica os conhecimentos da Neurociência com o objetivo de favorecer o desenvolvimento humano em grandes empresas.</p>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info15" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/miguel_nicolelis.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide15"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Miguel Nicolelis</p>
+                                       <p>Nasceu em São Paulo em 07/03/1961. É médico e neurocientista, graduado pela Universidade de São Paulo, com doutorado em Fisiologia Geral também pela USP, e pós-doutorado em Fisiologia e Biofísica pela Universidade de Hahnemann (EUA). Desde 1994 é professor do Departamento de Neurobiologia da Duke University (EUA) e desde 2001 é Co-diretor do Centro de Neuroengenharia desta mesma universidade. Em 2003, iniciou no Brasil a implantação de projetos voltados para o uso da ciência como agente de transformação social e econômica, sendo o Rio Grande do Norte o local de início desse projeto, com a criação do Instituto Internacional de Neurociências Edmond e Lily Safra (IIN-ELS). É pioneiro no estudo sobre a interação cérebro-máquina e lidera pesquisas que desenvolvem esta tecnologia, além de sua aplicação no reestabelecimento de movimentos em pessoas acometidas por paralisias e doença de Parkinson. Coordena o Projeto Andar de Novo (Walk Again Project), que desenvolveu o primeiro exoesqueleto controlado pelo cérebro humano e o Protocolo de Neuroreabilitação, que resultou em melhoras motora, sensorial e visceral inéditas em pessoas com paraplegia crônica completa. Publicou 222 artigos científicos, sendo 12 deles na Science e na Nature, as revistas científicas mais importantes do mundo. Em 2004, foi apontado pela Revista Scientific American como um dos 20 maiores cientistas da atualidade. Dentre os prêmios mais importantes destacam-se: Membro da Academia Francesa de Ciências; Membro da Academia Brasileira de Ciências; Director’s Pioneer Award e o Director’s Transformative R01 Award, recebidos dos Institutos Nacionais de Saúde (NIH) dos Estados Unidos; Quatro vezes agraciado com o Prêmio Grass Lecture da Sociedade Americana de Neurociência; Engenheiro Eminente da Tau Beta Pi, National Enginnering Honor Society; Prêmio Claude Shannon Luminary Award, da Nokia Bell Labs, entre outros. Miguel Nicolelis é autor dos livros: “Muito além do nosso eu: a nova neurociência que une cérebros e máquinas - e como ela pode mudar nossas vidas”; “Made in Macaíba – a história da criação de uma utopia científico-social no ex-império dos Tapuias”; “O Cérebro Relativístico – como ele funciona e por que ele não pode ser simulado por uma máquina de Turing”; e “O verdadeiro criador de tudo - como o cérebro humano esculpiu o universo que nós conhecemos”.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info15" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/carla_tieppo.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide15"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Carla Tieppo</p>
+                                       <p>Palestrante e consultora, aplica os conhecimentos da Neurociência com o objetivo de favorecer o desenvolvimento humano a partir da interface tangível do conhecimento do cérebro humano e suas potencialidades. Já prestou consultoria e palestrou em empresas como Petrobrás, Honda, Braskem, Suzano, Itaú Unibanco, Bradesco, Ambev, Votorantim, Kroton, Medtronic, Novartis, Rhodia, Correios, INPE, Hays, Governo do Estado de São Paulo, Dow Química, Escola Morumbi, Faber Castell, AstraZeneca, Roche, Medtronic, Uniquímica, Método Supera, Mattos Filho, Rede, Grupo Boticário, SICREDI, AlmapBBDO, DM9, Termomecânica, ABRH-SP, ABRH-RJ, APRH-Sorocaba, TRE-MG, TRE- TO, ABRH-RS, entre outras.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12" id="itemAgenda">
+                              <div class="row">
+                                 <div class="col-lg-4" id="btnAgenda">
+                                    <button onclick="GoToLivePalcoPrincipal()">Palco Principal</button>
+                                    <button id="exibe16" class="exibe16">Acessar Biografia</button>
+                                 </div>
+                                 <div class="col-lg-8" id="infoAgenda">
+                                    <p>10:30h - A HUMANIDADE E SUAS CRIAÇÕES: UM DIÁLOGO FRANCO ENTRE MÁQUINA E PESSOA.</p>
+                                    <p>O que acontence quando uma especialista em desenvolvimento humano encontra com a robo social mais avançada do mundo? Esse diálogo trará uma reflexão entre o papel das lideranças diante dos crescentes avanços tecnológicos.</p>
+                                    <p>Fab Robô: Única unidade no Brasil da robô social mais avançada do mundo, fabricada pela Furhat Robotics.</p>
+                                    <p>Soraia Schutel: Fundadora da Sonata Brasil, escola de cursos de especialização em desenvolvimento de lideranças.</p>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info16" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/robo_fab.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide16"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Fab Robô</p>
+                                       <p>Única unidade no Brasil da robô social mais avançada do mundo, fabricada pela Furhat Robotics.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 info16" id="infoPalestrante">
+                                 <div class="row">
+                                    <div class="col-lg-2" id="fotoPalestrante">
+                                       <img src="/img/speakers/soraia_schutel.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-10" id="textoPalestrante">
+                                       <div>
+                                          <a href="#" id="hide" class="hide16"><img src="/img/fechar.png" alt="" id="hide"></a>
+                                       </div>
+                                       <p>Soraia Schutel</p>
+                                       <p>Fundadora da Sonata Brasil, escola de cursos de especialização em desenvolvimento de lideranças, Soraia auxiliou ao longo dos últimos 10 anos no desenvolvimento de centenas de lideranças do Brasil e exterior, contribuindo no processo de autoconhecimento, empreendedorismo, empregabilidade, crescimento na carreira, gestão de pessoas e aquisição de novas competências e soft skills</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12" id="itemAgenda">
+                              <div class="row">
+                                 <div class="col-lg-4" id="btnAgenda">
+                                    <button onclick="GoToLivePalcoPrincipal()">Palco Principal</button>
+                                    <button id="exibe">Acessar Biografia</button>
+                                 </div>
+                                 <div class="col-lg-8" id="infoAgenda">
+                                    <p>10:45h - PAINEL COM LIDERANÇAS NACIONAIS.</p>
+                                    <p>Diálogo sobre contexto econômico e as micro e pequenas empresas com dirigentes do Sebrae.</p>
+                                    <p>Guilherme Afif Domingos: Assessor Especial do Ministério da Economia</p>
+                                    <p>Claudio George Mendonça: Presidente da ABASE e Diretor Superintendente do SEBRAE - MS</p>
+                                    <p>Carlos Melles: Diretor Presidente do SEBRAE NACIONAL</p>
+                                    <p>Vitor Roberto Tioqueta: Diretor Superintendente do SEBRAE - PR</p>
+                                    <p>Jose Gava Neto: Diretor de Administração de Finanças do SEBRAE - PR.</p>
+                                    <p>Julio Cezar Agostini: Diretor de Operações do SEBRAE - PR.</p>
+                                    <p>Eduardo Diogo: Diretor Sebrae - NACIONAL.</p>
+                                    <p>Bruno Quick: Diretor Técnico do SEBRAE - NACIONAL.</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12" id="itemAgenda">
+                              <div class="row">
+                                 <div class="col-lg-4" id="btnAgenda">
+                                    <button onclick="GoToLivePalcoPrincipal()">Palco Principal</button>
+                                    <button id="exibe">Acessar Biografia</button>
+                                 </div>
+                                 <div class="col-lg-8" id="infoAgenda">
+                                    <p>12:30h - POLO DE LIDERANÇA SEBRAE</p>
+                                    
+                                    <p>Bruno Quick - Diretor Técnico do SEBRAE - NACIONAL.</p>
+                                    <p>Julio Cezar Agostini - Diretor de Operações do SEBRAE - PR.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--Close Modal Agenda-->
+
+
+         <!-- Modal Aviso Lives-->
+         <div class="modal fade" id="modalAviso" tabindex="-1" role="dialog" aria-labelledby="modalAviso" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-top" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <img src="/img/close.png" alt="close" data-dismiss="modal" aria-label="Close">
+               </div>
+               <div class="modal-body">
+                  <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-12 text-center">
+                              <p>As lives estão começando!</p>
+                           </div>
+                           <div class="col-lg-12" id="btnAviso">
+                              <button onclick="GoToLivePalcoPrincipal();">Palco Principal</button>                              
+                           </div>
+                        </div>
+                  </div>
+               </div>
+            </div>
+            </div>
+         </div>
+
+         <div class="modal fade" id="modalAviso2" tabindex="-1" role="dialog" aria-labelledby="modalAviso2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-top" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <img src="/img/close.png" alt="close" data-dismiss="modal" aria-label="Close">
+               </div>
+               <div class="modal-body">
+                  <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-12 text-center">
+                              <p>As lives estão começando!</p>
+                           </div>
+                           <div class="col-lg-12" id="btnAviso">                              
+                              <button onclick="GoToLiveEspacoInspirar();">Espaço Inspirar</button>                              
+                           </div>
+                        </div>
+                  </div>
+               </div>
+            </div>
+            </div>
+         </div>
+
+         <div class="modal fade" id="modalAviso3" tabindex="-1" role="dialog" aria-labelledby="modalAviso3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-top" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <img src="/img/close.png" alt="close" data-dismiss="modal" aria-label="Close">
+               </div>
+               <div class="modal-body">
+                  <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-12 text-center">
+                              <p>As lives estão começando!</p>
+                           </div>
+                           <div class="col-lg-12" id="btnAviso">                              
+                              <button onclick="GoToLiveEspacoTransformar();">Espaço Transformar</button>                              
+                           </div>
+                        </div>
+                  </div>
+               </div>
+            </div>
+            </div>
+         </div>
+
+         <div class="modal fade" id="modalAviso4" tabindex="-1" role="dialog" aria-labelledby="modalAviso4" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-top" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <img src="/img/close.png" alt="close" data-dismiss="modal" aria-label="Close">
+               </div>
+               <div class="modal-body">
+                  <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-12 text-center">
+                              <p>As lives estão começando!</p>
+                           </div>
+                           <div class="col-lg-12" id="btnAviso">                              
+                              <button onclick="GoToLiveEspacoConectar();">Espaço Conectar</button>
+                           </div>
+                        </div>
+                  </div>
+               </div>
+            </div>
+            </div>
+         </div>
+
+         <div class="modal fade" id="modalAviso5" tabindex="-1" role="dialog" aria-labelledby="modalAviso3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-top" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <img src="/img/close.png" alt="close" data-dismiss="modal" aria-label="Close">
+               </div>
+               <div class="modal-body">
+                  <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-12 text-center">
+                              <p>As lives estão começando!</p>
+                           </div>
+                           <div class="col-lg-12" id="btnAviso">   
+                              <button onclick="GoToLiveEspacoInspirar();">Espaço Inspirar</button>                             
+                              <button onclick="GoToLiveEspacoTransformar();">Espaço Transformar</button>  
+                              <button onclick="GoToLiveEspacoConectar();">Espaço Conectar</button>                            
+                           </div>
+                        </div>
+                  </div>
+               </div>
+            </div>
+            </div>
+         </div>
+         <!-- Close Modal Aviso Lives-->
+
+
+         
+
+
+         
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        
+        <script type="text/javascript" src="java/FWDEVPlayer.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-analytics.js"></script>
+        <script src="/js/firebase_360.js"></script>
+        
+        <script type="text/javascript" src="js/agendaFunctions.js"></script>
+        <script type="text/javascript" src="js/loadmodals.js"></script>
+
+		<script type="text/javascript" src="pano2vr_player.js">
+		</script>
+		<script type="text/javascript" src="skin.js">
+		</script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap"/>
+		<script src="webxr/three.min.js"></script>
+		<script src="webxr/webxr-polyfill.min.js"></script>
+		<div id="container" style="width:100%;height:100%;overflow:hidden;">
+		<br>Carregando...<br><br>
+		</div>
+		<script type="text/javascript">
+	
+			// create the panorama player with the container
+			pano=new pano2vrPlayer("container");
+			// add the skin object
+			skin=new pano2vrSkin(pano);
+			// load the configuration
+		
+			window.addEventListener("load", function() {
+				pano.readConfigUrlAsync("pano.xml");
+			});
+		</script>
+		<noscript>
+			<p><b>Por favor, habilite o Javascript!</b></p>
+		</noscript>
+<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - --> 
+		<!-- Hack needed to hide the url bar on iOS 9, iPhone 5s --> 
+		<div style="width:1px;height:1px;"></div>
+	</body>
+</html>
